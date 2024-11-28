@@ -2,17 +2,20 @@ import os
 
 # Define environment variables with defaults
 REPOS = [
-    os.getenv("BOT1_REPO", "https://github.com/MrKali7/custompro2.git"),
+    os.getenv("BOT1_REPO", "https://github.com/MrKali7/custompro1.git"),
+    os.getenv("BOT2_REPO", "https://github.com/MrKali7/custompro2.git"),
     os.getenv("BOT2_REPO", "https://github.com/MrKali7/custompro3.git")
 ]
 
 BOT_DIRS = [
-    os.getenv("BOT1_DIR", "custompro2"),
+    os.getenv("BOT1_DIR", "custompro1"),
+    os.getenv("BOT2_DIR", "custompro2"),
     os.getenv("BOT2_DIR", "custompro3")
 ]
 
 SESSIONS = [
     os.getenv("BOT1_SESSION", "bot1_session"),
+    os.getenv("BOT2_SESSION", "bot2_session"),
     os.getenv("BOT2_SESSION", "bot2_session")
 ]
 
