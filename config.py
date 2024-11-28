@@ -17,7 +17,8 @@ SESSIONS = [
 ]
 
 # Optional: Add other configurations (e.g., ports, database settings)
-EXPOSED_PORTS = [
+"""EXPOSED_PORTS = [
     os.getenv("BOT1_PORT", "8080"),
     os.getenv("BOT2_PORT", "9090")
 ]
+"""
