@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Step 4: Install any dependencies specified in requirements.txt
-RUN pip3 install --no-cache-dir -r requirements.txt
+#RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Step 5: Install Git (required for cloning repositories)
 RUN apt-get update && apt-get install -y git
