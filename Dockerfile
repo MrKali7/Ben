@@ -10,13 +10,16 @@ RUN apt-get update && apt-get install -y \
     gcc \
     libffi-dev \
     libssl-dev \
+    git \
     && apt-get clean
 
 # Copy the application files into the container
 COPY . .
 
-# Step 7: Run build_bots.py to clone repos and install dependencies
+# Step 6: Upgrade pip and install dependencies
 RUN python3 -m pip install --upgrade pip
+
+# Step 7: Run build_bots.py to clone repos and install dependencies
 RUN python3 build_bots.py
 
 # Expose any ports necessary for the bots
